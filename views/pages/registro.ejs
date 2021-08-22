@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/meta')%>
+</head>
+<body>
+    <%-include('../partials/header')%>
+    <section>
+        <div class="contenedor-4">
+            <h4 class="compra">¡COMPRA ONLINE Y RECIBÍ TU PRODUCTO DONDE QUIERAS!</h4>
+        </div></section>
+        <section class="datos" id="datos">  
+            <div class="subtitulo-1"><h6>-COMPLETA TUS DATOS-</h6></div>
+             <div>
+            <div class="datos-1">    <form method="POST" action="enviar2.php" >
+            <input type="text" name="nombre" placeholder="nombre" maxlength="20">
+          <input type="" name="apellido" placeholder="apellido" maxlength="40">
+          <input type="email" name="correo" placeholder="correo electronico" maxlength="100">
+          <textarea name="consulta" placeholder="consulta" rows="5" required></textarea>
+          <input type="submit" >
+      </form></div>
+        </div>
+    </section>    
+
+</body>
+</html>

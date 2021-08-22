@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/meta')%>
+</head>
+<body>
+    <%-include('../partials/header')%>
+    <section class="contenedor-1">
+        <div class="titulo-4">
+            <h2>Productos Destacados</h2>
+        </div>
+        <div class="contenedor-2">
+          <div class="container-1"> 
+            <% JSONBody.forEach(juegos =>{ %>
+
+                   <div class="tarjeta-1">
+                        <div>
+                          <img class="img-1" src="<%= juegos.img %>" alt="">
+                        </div>
+                        <div>
+                             <h6><%= juegos.name %></h6>
+                             <p><%= juegos.description %></p>
+                            <p><%= juegos.description2 %></p> 
+                             
+                        </div>
+                    </div>
+                    <% }) %>       
+                    
+    </section>
+
+</body>
+</html>
