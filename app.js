@@ -1,7 +1,9 @@
 const express = require ('express');
 const app = express();
 const path = require('path');
-const products = require('./utils/products')
+const products = require('./utils/products');
+const port =process.env.PORT ||3001;
+
 const title = 'proyecto'
 
 
@@ -53,6 +55,6 @@ app.get('/joystick',(rec,res)=>{
     res.render('pages/joystick',{title: `${title} | joystick`});
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('funcionando en el puerto 3000');
 })
